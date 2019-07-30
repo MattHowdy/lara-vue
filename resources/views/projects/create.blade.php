@@ -11,6 +11,7 @@
     <div id="app" class="container">
         @include ('projects.list')      
 
+        <example></example>
         <form method="POST" action="/projects" @submit.prevent="onSubmit" @keydown="form.errors.clear($event.target.name)">
             <div class="control">
                 <label for="name" class="label">Project Name:</label>
@@ -34,8 +35,6 @@
         </form>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.js"></script>
-    <script src="https://unpkg.com/vue@2.1.6/dist/vue.js"></script>
     <script src="/js/app.js"></script>
 </body>
 </html>
